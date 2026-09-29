@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR%2'
+xargs -r -d '\n' -n 2 bash -c 'echo "$0"'
