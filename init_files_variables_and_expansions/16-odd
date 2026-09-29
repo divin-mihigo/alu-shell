@@ -1,2 +1,6 @@
 #!/bin/bash
-awk 'NR%2'
+while IFS= read -r line
+do
+  echo "$line"
+  read -r
+done
